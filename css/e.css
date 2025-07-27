@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:slnt,wght,CRSV@-4,100..900,0&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Crushed&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Indie+Flower&family=Manufacturing+Consent&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #1e293b;
+    color: white;
+    height: 80px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+}
+
+nav .logo img {
+    width: auto;
+    height: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    margin-left: -10px;
+}
+
+.search-sec {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    /* margin-left: -100px; */
+
+
+}
+
+.search-sec .select-op {
+    /* padding: 0 8px;  */
+    font-size: 1rem;
+    border-radius: 5px 0 0 5px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    scroll-behavior: smooth;
+
+}
+
+.search-sec .select-op option {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    height: max-content;
+
+}
+
+.search-sec .select-op option:hover {
+    background-color: #ccc;
+}
+
+.search-sec .select-op:hover {
+    background-color: #ccc;
+
+}
+
+.search-sec .select-op:active {
+    border: 2px solid #f2a100;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 50px;
+    width: 300px;
+
+}
+
+.search-bar button {
+    background: #ffaa00;
+    color: white;
+    padding: 9px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 50px;
+    border-left: none;
+    width: auto;
+}
+
+.search-bar button:active {
+    background-color: #ccc;
+    transition: .3s;
+}
+
+
+/* cart */
+.cart button {
+    background: none;
+    border: none;
+    color: white;
+    /* font-size: 2.5rem; */
+    cursor: pointer;
+
+}
+
+.cart button :active {
+    color: gold;
+    transform: scale(0.9s);
+}
+
+.cart button i {
+    margin-right: 10px;
+    font-size: 2rem;
+
+}
+
+.menu-items ul {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    list-style: none;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.menu-items ul li {
+    /* padding-left: 6px; */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-items ul li:active {
+    background-color: #ccc;
+    transform: scale(0.9s);
+}
+
+.menu-items ul li .menu-select {
+    /* font-size: 1rem;
+    border-radius: 5px 15px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    outline: none;
+    /* width: auto; */
+    /* height: auto;
+    line-height: normal;
+    border: 1px solid #cccccc; */
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 60px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    scroll-behavior: smooth;
+
+
+}
+
+.menu-items ul li .menu-select option {
+    background-color: #ffffff;
+
+}
+
+.product-sec {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    /* display: flex;
+    gap: 40px; */
+}
+
+/* Images  */
+.pro-images {
+    flex: 1;
+}
+
+.phones-img {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    display: flex(4);
+}
+
+.phones-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin-bottom: 15px;
+    object-fit: contain;
+    border: 3 solid rgb(22, 15, 1);
+
+}
+
+.more-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+.more-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.more-img img:hover {
+    transform: scale(1.1);
+    border: 2px solid #1e293b;
+}
+
+.pro-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-left: 3px dotted rgb(226, 225, 223);
+}
+
+.pro-details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+    line-height: 1.4;
+}
+
+.pro-details a {
+    font-size: 14px;
+    color: #0072ff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 10px 0 20px 0;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    border-bottom: 3px double  rgb(219, 217, 217);
+}
+
+.rating-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffcc00;
+}
+
+.rating-top p {
+    color: black;
+    margin: 0;
+}
+
+.rating-top a {
+    font-size: 14px;
+    color: #0072ff;
+    margin-left: 5px;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    top: 9px;
+}
+
+.rating-bottom {
+    font-size: 14px;
+    color: #333;
+    margin-left: 0;
+}
+
+/* .ratings {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin: 10px 0 20px 0;
+    color: #ffcc00;
+    font-size: 1.5rem;
+    border-bottom: 3px double rgb(189, 188, 188);
+}
+.ratings span.star{
+    color: #ffcc00;
+    font-size: 1.5rem;
+}
+
+.ratings p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.ratings a {
+    font-size: 14px;
+    color: #0072ff;
+    margin-left: 5px;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    top: 2px;
+}
+.rating-info i{
+    color: #050404;
+    font-size: 15px;
+    
+} */
+
+.price {
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+    margin-top: 10px;
+
+}
+
+.discount i {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 35px;
+}
+
+
+.old-price i {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 20px;
+}
+
+.old-price {
+    color: #888;
+    font-size: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quantity-selector button {
+    background: #1e293b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.add-to-cart,
+.Buy {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #1e293b;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover,
+.Buy:hover {
+    background: #0f172a;
+}
+
+.promotion {
+    margin-top: 20px;
+    padding: 50px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    background-image: url(../images/offer.png);
+    background-size: cover;
+    background-position: center -50px;
+    border: 3px solid #1e293b;
+}
+
+.promotion h3 {
+    color: #151e2b;
+    margin-bottom: 10px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-style: oblique;
+
+}
+
+.promotion p {
+    font-size: 14px;
+    color: #585757;
+    margin-bottom: 10px;
+    font-weight: bolder;
+
+}
+
+.promotion b.offer {
+    font-size: 20px;
+    color: #050404;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.promo-btn {
+    padding: 10px 20px;
+    background: #1e293b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.promo-btn:hover {
+    background: #0f172a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    margin-top: 40px;
+}
+
+/* @media (max-width: 768px) { 
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .search-sec {
+        width: 100%;
+        justify-content: center;
+    }
+    .search-bar input {
+        width: 100%;
+        max-width: 250px;
+    }
+ } */
