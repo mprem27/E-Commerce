@@ -9,6 +9,7 @@
 }
 body{
     padding-top: 80px;
+    overflow-x: auto;
 }
 
 
@@ -26,7 +27,7 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
 
 
@@ -134,7 +135,7 @@ nav .logo img {
 }
 
 .cart button :active {
-    color: gold;
+    color: #f77801;
     transform: scale(0.9s);
 }
 
@@ -162,30 +163,23 @@ nav .logo img {
 }
 
 .menu-items ul li:active {
-    background-color: #ccc;
+    color: #f77801;
     transform: scale(0.9s);
+}
+.menu-items ul li:hover{
+    color: #f77801;
+    transition: .3s;
 }
 
 .menu-items ul li .menu-select {
-    /* font-size: 1rem;
-    border-radius: 5px 15px;
-    background-color: #ccc;
-    color: #333;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    outline: none;
-    /* width: auto; */
-    /* height: auto;
-    line-height: normal;
-    border: 1px solid #cccccc; */
     font-size: 1rem;
     border-radius: 5px;
-    background-color: #ccc;
-    color: #333;
+    background-color: #6f6d6d;
+    color: #e9e8e8;
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
+    font-weight: 600;
     width: 60px;
     height: 50px;
     border: 1px solid #cccccc;
@@ -194,8 +188,16 @@ nav .logo img {
 
 }
 
+
 .menu-items ul li .menu-select option {
-    background-color: #ffffff;
+    background-color: #1e293b;
+    color: white;
+
+
+}
+.menu-items ul li .menu-select:hover{
+    color:#f77801;
+
 
 }
 
@@ -325,41 +327,6 @@ nav .logo img {
     margin-left: 0;
 }
 
-/* .ratings {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 8px;
-    margin: 10px 0 20px 0;
-    color: #ffcc00;
-    font-size: 1.5rem;
-    border-bottom: 3px double rgb(189, 188, 188);
-}
-.ratings span.star{
-    color: #ffcc00;
-    font-size: 1.5rem;
-}
-
-.ratings p {
-    color: black;
-    font-size: 1.2rem;
-}
-
-.ratings a {
-    font-size: 14px;
-    color: #0072ff;
-    margin-left: 5px;
-    white-space: nowrap;
-    text-align: center;
-    position: relative;
-    top: 2px;
-}
-.rating-info i{
-    color: #050404;
-    font-size: 15px;
-    
-} */
-
 .price {
     font-size: 16px;
     /* margin-bottom: 20px; */
@@ -443,6 +410,8 @@ nav .logo img {
     background-size: cover;
     background-position: center -130px;
     border: 3px solid #1e293b;
+    width: 100%;
+    min-width: 730px;
 }
 
 .promotion h3 {
@@ -488,6 +457,14 @@ footer {
     background: #1e293b;
     color: white;
     margin-top: 40px;
+    width: 100%;
+    min-width: 730px;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    
 }
 
 /* @media (max-width: 768px) { 
