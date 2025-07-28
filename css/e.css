@@ -50,8 +50,15 @@ nav .logo img {
     gap: 0;
     flex-shrink: 1;
     /* margin-left: -100px; */
+    border: 2px solid #ccc;
+    border-radius: 7px;
 
 
+}
+.search-sec:hover{
+    color:#f77801;
+    transform: scale(1.5s);
+    border: 2px solid #f2a100;
 }
 
 .search-sec .select-op {
@@ -87,7 +94,7 @@ nav .logo img {
 }
 
 .search-sec .select-op:active {
-    border: 2px solid #f2a100;
+    border: 3px solid #f2a100;
 }
 
 .search-bar form {
@@ -103,6 +110,9 @@ nav .logo img {
     height: 50px;
     width: 300px;
 
+}
+.search-bar input:active{
+    border: 3px solid #f2a100;
 }
 
 .search-bar button {
