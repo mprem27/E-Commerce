@@ -7,7 +7,8 @@
     text-decoration: none;
 
 }
-body{
+
+body {
     padding-top: 80px;
     overflow-x: auto;
 }
@@ -32,6 +33,7 @@ nav {
 
 
 }
+
 nav::-webkit-scrollbar {
     display: none;
 }
@@ -55,8 +57,9 @@ nav .logo img {
 
 
 }
-.search-sec:hover{
-    color:#f77801;
+
+.search-sec:hover {
+    color: #f77801;
     transform: scale(1.5s);
     border: 2px solid #f2a100;
 }
@@ -111,7 +114,8 @@ nav .logo img {
     width: 300px;
 
 }
-.search-bar input:active{
+
+.search-bar input:active {
     border: 3px solid #f2a100;
 }
 
@@ -142,6 +146,7 @@ nav .logo img {
     /* font-size: 2.5rem; */
     cursor: pointer;
 
+
 }
 
 .cart button :active {
@@ -150,10 +155,16 @@ nav .logo img {
 }
 
 .cart button i {
-    margin-right: 10px;
+    margin-left: 15px;
     font-size: 2rem;
-
+    margin-right: 15px;
 }
+
+.cart button i:hover {
+    color: #f77801;
+    transition: scale(0.9s);
+}
+
 
 .menu-items ul {
     display: flex;
@@ -176,7 +187,8 @@ nav .logo img {
     color: #f77801;
     transform: scale(0.9s);
 }
-.menu-items ul li:hover{
+
+.menu-items ul li:hover {
     color: #f77801;
     transition: .3s;
 }
@@ -205,8 +217,9 @@ nav .logo img {
 
 
 }
-.menu-items ul li .menu-select:hover{
-    color:#f77801;
+
+.menu-items ul li .menu-select:hover {
+    color: #f77801;
 
 
 }
@@ -465,7 +478,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: #1e293b;
-    color: white;
+    color: #848484;
     margin-top: 40px;
     width: 100%;
     min-width: 730px;
@@ -474,20 +487,21 @@ footer {
     right: 0;
     overflow: hidden;
     box-sizing: border-box;
-    
+    font-family: 'Open Sans', sans-serif;
+
 }
 
-/* @media (max-width: 768px) { 
-    nav {
-        flex-direction: column;
-        height: auto;
-    }
-    .search-sec {
-        width: 100%;
-        justify-content: center;
-    }
-    .search-bar input {
-        width: 100%;
-        max-width: 250px;
-    }
- } */
+footer a {
+    color: #848484;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 11px;
+    margin-top: 10px;
+}

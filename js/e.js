@@ -17,7 +17,7 @@ function decreaseQuantity() {
 
 const qtyInput = document.getElementById('quantity');
 const priceElement = document.querySelector('.discount');
-const basePrice = 135900; 
+const basePrice = 135900;
 
 function updatePrice() {
     const quantity = parseInt(qtyInput.value) || 1;
